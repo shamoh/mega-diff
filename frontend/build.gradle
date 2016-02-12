@@ -1,0 +1,11 @@
+apply plugin: 'cz.kramolis.mega'
+
+mainClassName = 'cz.kramolis.mega.runtime.Main'
+
+archivesBaseName = "${rootProject.name}-${name.replaceAll("\\p{Upper}") { "-${it.toLowerCase()}" }}"
+
+dependencies {
+    compile libraries.mega_runtime
+    compile libraries.mega_grizzly
+    compile libraries.mega_jaxrs
+}

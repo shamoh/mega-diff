@@ -1,0 +1,40 @@
+buildscript {
+    ext {
+        megaVersion = '-SNAPSHOT'
+    }
+
+    repositories {
+        mavenLocal()
+        maven { url "https://jitpack.io" }
+    }
+
+    dependencies {
+        classpath group: "com.github.shamoh.mega", name: "mega-gradle-plugin", version: megaVersion
+    }
+}
+
+apply from: "gradle/assertEnv.gradle"
+apply from: "gradle/versioning.gradle"
+apply from: "gradle/dependencies.gradle"
+apply from: "gradle/java.gradle"
+apply from: "gradle/integrationTest.gradle"
+apply from: 'gradle/check.gradle'
+apply from: "gradle/maven.gradle"
+
+allprojects {
+    group = 'com.github.shamoh.mega-diff'
+}
+
+subprojects {
+    buildscript {
+        apply from: "$rootDir/gradle/buildscript.gradle"
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.10'
+}
+
+gradle.buildFinished {
+    println "Build finished: ${new java.util.Date()}"
+}

@@ -1,0 +1,16 @@
+ext {
+    versions = [:]
+    libraries = [:]
+}
+
+versions = [
+        mega       : megaVersion,
+
+        checkstyle : '6.15'
+]
+
+libraries = [
+        mega_runtime : "com.github.shamoh.mega:mega-runtime:${versions.mega}",
+        mega_grizzly : "com.github.shamoh.mega:mega-grizzly:${versions.mega}",
+        mega_jaxrs   : "com.github.shamoh.mega:mega-jaxrs:${versions.mega}"
+]

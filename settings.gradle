@@ -1,0 +1,4 @@
+rootProject.name = 'mega-diff'
+
+include \
+    "frontend"
