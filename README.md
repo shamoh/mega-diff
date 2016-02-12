@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/shamoh/mega-diff.svg?branch=master)](https://travis-ci.org/shamoh/mega-diff)
+[![Code Coverage](http://codecov.io/github/shamoh/mega-diff/coverage.svg?branch=master)](http://codecov.io/github/shamoh/mega-diff?branch=master)
+[![JitPack Status](https://jitpack.io/v/shamoh/mega-diff.svg)](https://jitpack.io/#shamoh/mega-diff)
+
 Mega Diff Application
 =====================
 
