@@ -1,3 +1,5 @@
+apply from: "$rootDir/gradle/jacoco.gradle"
+
 apply plugin: 'cz.kramolis.mega'
 
 mainClassName = 'cz.kramolis.mega.runtime.Main'
