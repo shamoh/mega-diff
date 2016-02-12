@@ -23,6 +23,7 @@ allprojects {
         mavenLocal()
         mavenCentral()
         jcenter()
+        maven { url "https://jitpack.io" }
     }
 
 }

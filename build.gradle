@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        megaVersion = '-SNAPSHOT'
+        megaVersion = '0.0.1-a001'
     }
 
     repositories {
